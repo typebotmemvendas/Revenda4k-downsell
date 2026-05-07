@@ -9,6 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://midas.ticto.app/oneclickbuy.js" async></script>
+    <style>
+        .ticto-buttons-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .ticto-upsell-button, .ticto-refuse-button {
+            max-width: 100% !important;
+            height: auto !important;
+            min-height: 50px;
+            padding: 15px;
+            white-space: normal;
+            line-height: 1.2;
+            cursor: pointer;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        .ticto-upsell-button:hover, .ticto-refuse-button:hover {
+            transform: scale(1.02);
+            opacity: 0.95;
+        }
+        .ticto-upsell-button {
+            min-height: 90px;
+        }
+    </style>
 </head>
 <body>
     <header class="urgency-header">
@@ -107,10 +136,10 @@
             <section class="cta-section">
                 <div class="container">
                     <p class="cta-subtitle">↓ Clique Abaixo para Começar ↓</p>
-                    <a href="#" class="cta-button pulse-anim">
-                        SIM, QUERO COMEÇAR MEU TESTE DE 21 DIAS GRÁTIS<br>
-                        <span class="cta-small">(COM OPÇÃO DE ACESSO POR 1 ANO COMPLETO)</span>
-                    </a>
+                    <div class="ticto-buttons-wrapper">
+                        <button type="button" style="background-color:#21ab31;width:367px;height:90px;font-family:inputs.font.body.font.options.arial;font-size:19px;font-weight:700;color:#FFFFFF;border-color:#000000;border-radius:10px;border-width:0px;text-transform:none" class="ticto-upsell-button" data-offer-code="O5F50DB19">SIM, QUERO O PLANO DE 4 MIL COM 21 DIAS GRÁTIS</button>
+                        <button type="button" style="background-color:#b92222;width:255px;height:50px;font-family:inputs.font.body.font.options.arial;font-size:17px;font-weight:400;color:#FFFFFF;border-color:#000000;border-radius:10px;border-width:2px;text-transform:none" class="ticto-refuse-button" > NÃO É O QUE BUSCO PRA MINHA CONFEITARIA HOJE!</button>
+                    </div>
                 </div>
             </section>
 
